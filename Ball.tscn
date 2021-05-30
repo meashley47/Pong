@@ -1,0 +1,23 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Neon.png" type="Texture" id=1]
+
+[sub_resource type="AtlasTexture" id=1]
+flags = 4
+atlas = ExtResource( 1 )
+region = Rect2( 99.9977, -1.7904, 51.4512, 53.2038 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 10.9574
+
+[node name="Ball" type="KinematicBody2D"]
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="."]
+texture = SubResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2( 0.314436, 0.880423 )
+shape = SubResource( 2 )
