@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=5 format=2]
 
 [ext_resource path="res://Assets/Neon.png" type="Texture" id=1]
+[ext_resource path="res://Opponent.gd" type="Script" id=2]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -12,6 +13,7 @@ extents = Vector2( 5.07458, 54.4845 )
 
 [node name="Opponent" type="KinematicBody2D"]
 position = Vector2( 1004, 300 )
+script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
 }
