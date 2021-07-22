@@ -9,7 +9,6 @@ func _ready():
 func _physics_process(delta):
 	move_and_slide(Vector2(0, get_opponent_direction()) * speed)
 
-
 func get_opponent_direction():
 	#Ball is below, so move paddle down
 	if ball.position.y > position.y:

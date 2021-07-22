@@ -14,4 +14,3 @@ func _physics_process(delta):
 	#Bounce the ball if it collided
 	if collision:
 		velocity = velocity.bounce(collision.normal)
-	
