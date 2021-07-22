@@ -18,6 +18,10 @@ _global_script_class_icons={
 config/name="Pong"
 run/main_scene="res://Level.tscn"
 
+[layer_names]
+
+2d_physics/layer_2="wall"
+
 [rendering]
 
 environment/default_environment="res://default_env.tres"

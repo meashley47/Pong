@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=6 format=2]
 
 [ext_resource path="res://Assets/Neon.png" type="Texture" id=1]
 [ext_resource path="res://Ball.gd" type="Script" id=2]
+[ext_resource path="res://Assets/ping_pong_8bit_beeep.ogg" type="AudioStream" id=3]
 
 [sub_resource type="AtlasTexture" id=1]
 flags = 4
@@ -23,3 +24,6 @@ texture = SubResource( 1 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 0.314436, 0.880423 )
 shape = SubResource( 2 )
+
+[node name="Collision Sound" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 3 )
