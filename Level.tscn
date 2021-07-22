@@ -99,9 +99,9 @@ one_shot = true
 
 [node name="Point Sound" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-[connection signal="body_entered" from="Left Wall" to="Opponent" method="_on_Left_Wall_body_entered"]
 [connection signal="body_entered" from="Left Wall" to="." method="_on_Left_Wall_body_entered"]
-[connection signal="body_entered" from="Right Wall" to="Opponent" method="_on_Right_Wall_body_entered"]
+[connection signal="body_entered" from="Left Wall" to="Opponent" method="_on_Left_Wall_body_entered"]
 [connection signal="body_entered" from="Right Wall" to="." method="_on_Right_Wall_body_entered"]
-[connection signal="timeout" from="Timer" to="Opponent" method="_on_Timer_timeout"]
+[connection signal="body_entered" from="Right Wall" to="Opponent" method="_on_Right_Wall_body_entered"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+[connection signal="timeout" from="Timer" to="Opponent" method="_on_Timer_timeout"]
